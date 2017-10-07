@@ -1,0 +1,14 @@
+object Background: TBackground
+  Left = 494
+  Height = 369
+  Top = 159
+  Width = 610
+  Caption = 'Background'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnMouseDown = MouseDown
+  OnMouseMove = MouseMove
+  OnMouseUp = MouseUp
+  LCLVersion = '1.8.0.4'
+  WindowState = wsMaximized
+end
