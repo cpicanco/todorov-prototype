@@ -40,7 +40,9 @@ procedure FinalizeAudio;
 
 implementation
 
-
+{$IFDEF WINDOWS}
+uses Windows;
+{$ENDIF}
 
 var
   al_device   : PALCdevice;

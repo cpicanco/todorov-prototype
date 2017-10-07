@@ -71,5 +71,5 @@ lib/*
 *.lps
 *.ico
 *.txt
-concurrent_chain
-
+*.bin
+*.dbg
