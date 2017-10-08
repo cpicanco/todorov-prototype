@@ -8,6 +8,7 @@
       <Title Value="concurrent_chain"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
+      <Icon Value="0"/>
       <Resources Count="2">
         <Resource_0 FileName="CSQ1.wav" Type="RCDATA" ResourceName="CSQ1"/>
         <Resource_1 FileName="CSQ2.wav" Type="RCDATA" ResourceName="CSQ2"/>
@@ -23,7 +24,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <Libraries Value="/dependencies/"/>
+            <Libraries Value="dependencies/openal"/>
             <OtherUnitFiles Value="schedules"/>
             <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
           </SearchPaths>

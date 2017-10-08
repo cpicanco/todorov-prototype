@@ -67,6 +67,7 @@ begin
   if Position = Max then
   begin
     Reversed:= not Reversed;
+    Position:=0;
     FSchedule.DoResponse;
   end;
 end;
@@ -91,7 +92,9 @@ begin
   Parent := FPanel;
 
   OnChange:=@Change;
-  Align:=alClient;
+
+  Width:=FPanel.Width;
+  Left:= (FPanel.Width div 2)-(Height div 2);
   Orientation:=trVertical;
   ParentColor := False;
   TickStyle:=tsNone;

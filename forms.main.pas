@@ -1,3 +1,6 @@
+{
+
+}
 unit Forms.Main;
 
 {$mode objfpc}{$H+}
@@ -118,6 +121,11 @@ begin
   WriteRow(Slider.Name+'.ChangedTo.'+Slider.Schedule.AsString);
   Slider1.Schedule.Start;
   Slider2.Schedule.Start;
+  Invalidate;
+  Slider1.Panel.Invalidate;
+  Slider2.Panel.Invalidate;
+  Slider1.Invalidate;
+  Slider2.Invalidate;
 end;
 
 procedure TBackground.FormCreate(Sender: TObject);
@@ -176,6 +184,7 @@ begin
   end;
   Report.Filename:=Application.ExeName;
   Report.WriteRow(['Início:', DateTimeToStr(Now)]);
+  Report.WriteRow(['time', 'event', 'mousex', 'mousey']);
   FStartTime := GetTickCount64;
   WriteRow(Slider1.Name+'.ChangedTo.'+Slider1.Schedule.AsString);
   WriteRow(Slider2.Name+'.ChangedTo.'+Slider2.Schedule.AsString);
